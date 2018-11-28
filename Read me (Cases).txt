@@ -1,0 +1,49 @@
+Test data (considered the leap year):
+
+Case #1
+Date1: 05 06 1994
+Date2: 01 06 1995
+Result: 361
+
+Case #2
+Date1: qwert 
+Date2: 
+Result: Error shown (Only numbers are allowed.)
+
+Case #3
+Date1: 05 06 19944 -> 
+Date2:
+Result: Error shown (Year must be in between 1900 - 2100.)
+
+Case #4
+Date1: 05 056 1998
+Date2:
+Result: Error shown (Month must be in between 1 - 12.)
+
+Case #5
+Date1: 31 06 1998
+Date2:
+Result: Error shown (Date must be between 1 to30.) as June(06) has only 30 days.
+
+Case #6
+Date1: 29 2 1998
+Date2:
+Result: Error shown (Date must be between 1 to 28.) as February(02) has only 28 days in a non leap year.
+
+Case #6
+Date1: 30 2 2000
+Date2:
+Result: Error shown (Date must be between 1 to 29.) as February(02) has only 29 days in a non leap year.
+
+Case #7
+Date1: 05 06 2100
+Date2: 01 06 1995
+Result: 38330
+
+Case #8
+Date1: //empty
+Date2: //empty
+Result: Error shown (Update the date.)
+
+
+Regarding rest API, we can get the difference by sending from and to dates in the url itself. We will capture the url params and send the data.
