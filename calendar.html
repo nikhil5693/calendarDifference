@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calendar Difference</title>
+  <style src="styles.css"></style>
+</head>
+<body>
+  <div>
+    <label for = 'date1'>Enter date 1: </label>
+    <input id = 'date1' onChange = "dateChange(event)" placeholder="DD MM YYYY"/>  
+    <span class= 'error' id='error_date1'></span>
+  </div>
+  <div>
+    <label for = 'date2'>Enter date 2: </label>
+    <input id = 'date2' onChange = "dateChange(event)" placeholder="DD MM YYYY"/>    
+    <span class= 'error' id='error_date2'></span>
+  </div>
+  <button onClick = "captureDifference()"> Check difference </button>
+  <div>
+    <div>Date 1: <strong id='date1Result'></strong><div>
+    <div>Date 2: <strong id='date2Result'></strong><div>
+    <div style="text-align: center">Difference: <h1 id='result'></h1><div>
+  </div>
+<script src = "calendar_js.js"></script>
+</body>
+</html>
